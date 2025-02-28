@@ -30,6 +30,8 @@ $border-radius-large: 46px;
     width: 673px;
     height: 81px;
     background-color: #ffc412;
+    margin-top: 24px;
+    margin-bottom: 34px;
     color: #16171e;
     font-size: 20px;
     font-weight: bold;
@@ -76,7 +78,7 @@ $border-radius-large: 46px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 99px;
+  height: 49px;
 }
 
 .swapButton__background {
@@ -250,6 +252,7 @@ $border-radius-large: 46px;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+    margin-top: 26px;
   }
   
   // Button
