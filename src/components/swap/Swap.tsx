@@ -3,6 +3,7 @@ import "./Swap.scss";
 import { RiBarChart2Fill } from "react-icons/ri";
 import { FaSync } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
+import TokenSwap from "./TokenSwap";
 export type TabType = "alien" | "stable";
 
 const Swap: React.FC = () => {
@@ -36,11 +37,12 @@ const Swap: React.FC = () => {
 
         <section className="swapCard">
           <Header activeTab={activeTab} />
-          <TokenInput />
-          <TokenOutput />
-          <button className="swapButton">SWAP NOW</button>
-          <SlippageTolerance />
-          <ConnectButtons />
+        
+          <div>
+            <TokenSwap />
+          </div>
+         
+       
         </section>
       </main>
     </>
@@ -72,60 +74,5 @@ const Header: React.FC<{ activeTab: TabType }> = ({ activeTab }) => {
   );
 };
 
-// Token Input Component
-const TokenInput: React.FC = () => {
-  return (
-    <div className="inputContainer">
-      <div className="tokenSelector">
-        <span className="tokenSymbol">WETH</span>
-      </div>
-      <div className="amount">37.082584</div>
-    </div>
-  );
-};
-
-// Token Output Component
-const TokenOutput: React.FC = () => {
-  return (
-    <div className="outputWrapper">
-      <div className="labelRow">
-        <span className="label">You Receive</span>
-      </div>
-      <div className="outputContainer">
-        <div className="tokenSelector">
-          <span className="tokenSymbol">ALB</span>
-        </div>
-        <div className="amountSection">
-          <span className="amount">37.082584</span>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-// Slippage Tolerance Component
-const SlippageTolerance: React.FC = () => {
-  return (
-    <section className="slippageContainer">
-      <h2 className="title">Slippage Tolerance</h2>
-      <div className="inputGroup">
-        <span className="placeholder">Enter Amount</span>
-        <div className="estimate">
-          ~ $12.79 <span className="negative">(-0.2%)</span>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-// Connect Buttons Component
-const ConnectButtons: React.FC = () => {
-  return (
-    <div className="buttonGroup">
-      <button className="connectButton">CONNECT METAMASK</button>
-      <button className="connectButton">CONNECT WALLET</button>
-    </div>
-  );
-};
 
 export default Swap;

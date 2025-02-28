@@ -1,0 +1,295 @@
+// Variables
+$primary-bg: #16171e;
+$highlight-color: #ffc412;
+$text-color: #ffffff;
+$secondary-text: #989696;
+$border-radius-large: 46px;
+
+
+
+// Token Swap Container
+.tokenSwap {
+  position: relative;
+  width: 673px;
+  max-width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// Sections
+.tokenSwap__section {
+  width: 100%;
+  top: -16px;
+  position: relative;
+}
+
+// Swap Button
+.swap-button {
+    width: 673px;
+    height: 81px;
+    background-color: #ffc412;
+    color: #16171e;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 61px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    transition: background 0.3s ease-in-out;
+  
+    &:hover {
+      background-color: #ffdb4d;
+    }
+  }
+  
+  // Responsive Design
+  @media (max-width: 1024px) {
+    .swap-button {
+      width: 90%;
+      height: 70px;
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .swap-button {
+      width: 95%;
+      height: 60px;
+      font-size: 16px;
+    }
+  }
+  
+
+.tokenSwap__label {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: $secondary-text;
+}
+
+// Swap Button
+.swapButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 99px;
+}
+
+.swapButton__background {
+//   background: $highlight-color;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.swapButton__icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  transform: rotate(0deg);
+  z-index: 1;
+}
+
+// Token Input
+.tokenInput {
+  display: flex;
+  align-items: center;
+  background-color: $primary-bg;
+  border-radius: $border-radius-large;
+  width: 100%;
+  height: 81px;
+  padding: 20px 28px;
+}
+
+.tokenInput__icon {
+  width: 31px;
+  height: 31px;
+  margin-right: 16px;
+}
+
+.tokenInput__name {
+  font-size: 20px;
+  font-weight: bold;
+  color: $text-color;
+}
+
+.tokenInput__amount {
+  margin-left: auto;
+  text-align: right;
+}
+
+.tokenInput__fiat {
+  font-size: 14px;
+  font-weight: bold;
+  color: $secondary-text;
+}
+
+.tokenInput__rateChange {
+  color: red;
+  margin-left: 5px;
+}
+
+.tokenInput__tokenAmount {
+  font-size: 20px;
+  font-weight: bold;
+  color: $text-color;
+}
+
+// Responsive Design
+@media (max-width: 640px) {
+  .tokenSwap {
+    width: 100%;
+    max-width: 673px;
+  }
+
+  .swapButton {
+    height: 80px;
+  }
+
+  .swapButton__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .tokenInput {
+    height: 70px;
+    padding: 16px;
+  }
+
+  .tokenInput__name {
+    font-size: 18px;
+  }
+
+  .tokenInput__fiat,
+  .tokenInput__tokenAmount {
+    font-size: 16px;
+  }
+}
+
+
+// Container
+.slippage-container {
+    display: flex;
+    flex-direction: column;
+    // max-width: 673px;
+  }
+  
+  // Label
+  .slippage-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #989696;
+  }
+  
+  // Input Container
+  .slippage-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #16171e;
+    padding: 24px 28px;
+    margin-top: 8px;
+    border-radius: 46px;
+  }
+  
+  // Left Section
+  .slippage-input__left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 18px;
+    color: #989696;
+  }
+  
+  .slippage-input__icon {
+    width: 31px;
+    height: 31px;
+    object-fit: contain;
+  }
+  
+  .slippage-input__placeholder {
+    font-size: 18px;
+  }
+  
+  // Right Section
+  .slippage-input__right {
+    font-size: 16px;
+    font-weight: 600;
+    color: #989696;
+    text-align: right;
+  }
+  
+  .slippage-input__percentage {
+    color: rgba(253, 76, 76, 1);
+    margin-left: 5px;
+  }
+  
+  // Responsive Design
+  @media (max-width: 640px) {
+    .slippage-input {
+      padding: 20px;
+    }
+  
+    .slippage-input__left {
+      font-size: 16px;
+    }
+  
+    .slippage-input__right {
+      font-size: 14px;
+    }
+  }
+  
+
+  // Connect Options Container
+.connect-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  // Button
+  .connect-options__button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 19px 63px;
+    border: 1px solid #989696;
+    border-radius: 51px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+  
+  // Icon
+  .connect-options__icon {
+    width: 36px;
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
+  
+  // Text
+  .connect-options__text {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  // Responsive Design
+  @media (max-width: 991px) {
+    .connect-options__button {
+      padding: 19px 20px;
+      justify-content: center;
+    }
+  }
+  
