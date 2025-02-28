@@ -1,0 +1,144 @@
+// Variables
+$primary-color: #1f212a;
+$secondary-color: #ffc412;
+$text-color: #fff;
+$font-family: "Josefin Sans", sans-serif;
+
+// Navigation Container
+.navContainer {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+}
+
+// Navigation Content
+.navContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 24px;
+}
+
+@media (max-width: 991px) {
+  .navContent {
+    padding: 0 16px;
+  }
+}
+
+// Logo Section
+.logoSection {
+  display: flex;
+  align-items: center;
+}
+
+.logoText {
+  color: $text-color;
+  font-family: $font-family;
+  font-size: 28px;
+  font-weight: 700;
+
+  @media (max-width: 640px) {
+    font-size: 24px;
+  }
+}
+
+.highlight {
+  color: $secondary-color;
+}
+
+// Navigation Links
+.navLinks {
+  display: flex;
+  gap: 32px;
+  margin-left: 48px;
+
+  @media (max-width: 991px) {
+    gap: 24px;
+  }
+
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+.navLink,
+.navLinkActive {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: $font-family;
+  font-size: 16px;
+  color: $text-color;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  padding-bottom: 6px;
+
+  &.navLinkActive {
+    opacity: 1;
+    padding-bottom: 6px;
+    color: #FFC412;
+    border-bottom: 2px solid #FFC412;
+    border-radius: 1px;
+  }
+}
+
+// Right Section
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  @media (max-width: 991px) {
+    gap: 16px;
+  }
+}
+
+.price {
+  color: $secondary-color;
+  font-family: $font-family;
+  font-size: 19px;
+
+  @media (max-width: 640px) {
+    font-size: 16px;
+  }
+}
+
+.menuDots {
+  color: #16171E;
+  background: #FFC412;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+
+// Connect Wallet Button
+.connectButton-navbar {
+  background-color: $secondary-color;
+  color: $primary-color;
+  border: none;
+  border-radius: 24.5px;
+  padding: 12px 24px;
+  font-family: $font-family;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  @media (max-width: 640px) {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

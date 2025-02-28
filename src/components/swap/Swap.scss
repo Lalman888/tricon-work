@@ -1,0 +1,192 @@
+// Variables
+$primary-color: #1f212a;
+$secondary-color: #ffc412;
+$text-color: #fff;
+$border-color: #989696;
+$background-dark: #16171e;
+$font-family: "Josefin Sans", sans-serif;
+
+// Swap Container
+.swapContainer {
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #16171e;
+}
+
+// Tabs
+.swapTabs {
+    border: 0.4px solid $border-color;
+    border-radius: 59px;
+    width: 490px;
+    height: 76px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 32px;
+}
+
+.tab {
+    color: $border-color;
+    flex: 1;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: color 0.2s ease;
+    font-family: $font-family;
+}
+
+.tabActive {
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    font-family: $font-family;
+    color: $secondary-color;
+    background: #1F212A;
+    border: 0.4px solid $secondary-color;
+    border-radius: 59px;
+    width: 237px;
+}
+
+@media (max-width: 640px) {
+    .swapTabs {
+        width: 100%;
+        max-width: 320px;
+        height: 60px;
+    }
+}
+
+// Swap Card
+.swapCard {
+    background-color: $primary-color;
+    border-radius: 26px;
+    width: 100%;
+    max-width: 740px;
+    padding: 37px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.4px solid #989696;
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+
+// Header
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.title {
+    color: $secondary-color;
+    font-size: 28px;
+}
+
+.header__icon,.header__action-item{
+    color: white;
+    background: black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.header__title-text{
+    font-weight: 600;
+    color: #FFC412;
+    font-size: 28px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.header__subtitle{
+        font-weight: 600;
+        color: #E2E2E2;
+        font-size: 18px;
+}
+
+.header__actions{
+    display: flex;
+    gap: 10px;
+}
+
+
+// Token Input & Output
+.inputContainer,
+.outputContainer {
+    background-color: $background-dark;
+    border-radius: 46px;
+    width: 100%;
+    padding: 23px 28px;
+}
+
+.tokenSelector {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 19px;
+    color: $text-color;
+}
+
+.amount {
+    color: $text-color;
+    font-size: 20px;
+}
+
+// Swap Button
+.swapButton {
+    color: $primary-color;
+    background-color: $secondary-color;
+    border-radius: 61px;
+    padding: 20px 40px;
+    font-size: 21px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+// Slippage Tolerance
+.slippageContainer {
+    margin-top: 20px;
+}
+
+.title {
+    color: $border-color;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.inputGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $border-color;
+}
+
+// Connect Buttons
+.buttonGroup {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.connectButton {
+    border: 1px solid $border-color;
+    border-radius: 51px;
+    padding: 15px 50px;
+    background: transparent;
+    color: $text-color;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
