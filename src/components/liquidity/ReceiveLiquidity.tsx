@@ -54,9 +54,9 @@ const ReceiveLiquidity: React.FC = () => {
   );
 };
 
-interface SwapButtonProps {
-  swapIcon: string;
-}
+// interface SwapButtonProps {
+//   swapIcon: string;
+// }
 
 const SwapButton = (
 
