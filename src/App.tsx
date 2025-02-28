@@ -13,11 +13,7 @@ function App() {
 
   return (
     <>
-      {/* <Routes>
-        <Route index element={<Swap />} />
-        <Route path="liquidity" element={<Liquidity />} />
-        <Route path="receive" element={<ReceiveLiquidityPage/>} />
-      </Routes> */}
+    
        <Routes>
         <Route path="/" element={<Swap />} />
         <Route path="/liquidity" element={<Liquidity />} />
