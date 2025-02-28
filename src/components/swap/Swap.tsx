@@ -37,12 +37,10 @@ const Swap: React.FC = () => {
 
         <section className="swapCard">
           <Header activeTab={activeTab} />
-        
+
           <div>
             <TokenSwap />
           </div>
-         
-       
         </section>
       </main>
     </>
@@ -73,6 +71,5 @@ const Header: React.FC<{ activeTab: TabType }> = ({ activeTab }) => {
     </header>
   );
 };
-
 
 export default Swap;

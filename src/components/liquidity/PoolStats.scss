@@ -1,0 +1,82 @@
+// Main PoolStats Container
+.poolStats {
+    padding: 20px;
+    width: 676px;
+    max-width: 100%;
+    // background-color: #16171e;
+    border-radius: 12px;
+  }
+  
+  // StatRow Section
+  .statRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  
+    @media (max-width: 640px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  .statRow__center {
+    text-align: center;
+  }
+  
+  .statRow__right {
+    text-align: right;
+  }
+  
+  // Individual Stat Item
+  .statItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  
+    &__label {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffc412;
+    }
+  
+    &__value {
+      font-size: 16px;
+      font-weight: 500;
+      color: #e2e2e2;
+    }
+  }
+  
+  // Divider Line
+  .divider {
+    height: 1px;
+    background: #989696;
+    margin: 10px 0;
+  }
+  
+  // Single Stat Row
+  .singleStatRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  
+    @media (max-width: 640px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    &__label {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffc412;
+    }
+  
+    &__value {
+      font-size: 16px;
+      font-weight: 500;
+      color: #e2e2e2;
+      text-align: right;
+    }
+  }
+  
