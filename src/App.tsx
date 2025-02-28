@@ -2,7 +2,7 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
-import { Routes, Route } from "react-router";
+import { Routes, Route } from "react-router-dom";
 
 import Swap from "./pages/swap/Swap";
 import Liquidity from "./pages/liquidity/Liquidity";
